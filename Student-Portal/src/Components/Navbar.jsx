@@ -18,11 +18,12 @@ export const Navbar = () => {
           onClick={toggleMenu}
           aria-controls="navbarNav"
           aria-expanded={menuOpen}
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
-        <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
+          id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink className="nav-link" to="/" end>

@@ -1,11 +1,11 @@
-import RegisterForm from "../Components/RegisterForm"
+import RegisterForm from "../Components/RegisterForm";
 
 export const Register = () => {
-    return(
-        <>
-            <RegisterForm />
-        </>
-    )
-}
+  return (
+    <>
+      <RegisterForm />
+    </>
+  );
+};
 
-export default Register
+export default Register;

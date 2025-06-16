@@ -1,9 +1,9 @@
-import CourseCard from '../Components/coursesCard';
-import { courses } from '../Data/courses';
+import CourseCard from "../Components/coursesCard";
+import { courses } from "../Data/courses";
 
 const Courses = () => (
   <div className="container">
-    {courses.map(course => (
+    {courses.map((course) => (
       <CourseCard key={course.code} course={course} />
     ))}
   </div>

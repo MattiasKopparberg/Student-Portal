@@ -29,7 +29,9 @@ export default function RegisterForm() {
     <div className="container mt-5">
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-          <label htmlFor="name" className="form-label">Name</label>
+          <label htmlFor="name" className="form-label">
+            Name
+          </label>
           <input
             id="name"
             name="name"
@@ -38,13 +40,17 @@ export default function RegisterForm() {
             onChange={handleChange}
             placeholder="John Doe"
             required
-            onInvalid={(e) => e.target.setCustomValidity("Please enter your name")}
+            onInvalid={(e) =>
+              e.target.setCustomValidity("Please enter your name")
+            }
             onInput={(e) => e.target.setCustomValidity("")}
           />
         </div>
 
         <div className="mb-3">
-          <label htmlFor="email" className="form-label">Email</label>
+          <label htmlFor="email" className="form-label">
+            Email
+          </label>
           <input
             id="email"
             name="email"
@@ -54,13 +60,17 @@ export default function RegisterForm() {
             onChange={handleChange}
             placeholder="example@mail.com"
             required
-            onInvalid={(e) => e.target.setCustomValidity("Please enter your email")}
+            onInvalid={(e) =>
+              e.target.setCustomValidity("Please enter your email")
+            }
             onInput={(e) => e.target.setCustomValidity("")}
           />
         </div>
 
         <div className="mb-3">
-          <label htmlFor="phoneNumber" className="form-label">Phone Number</label>
+          <label htmlFor="phoneNumber" className="form-label">
+            Phone Number
+          </label>
           <input
             id="phoneNumber"
             name="phoneNumber"
@@ -70,13 +80,17 @@ export default function RegisterForm() {
             onChange={handleChange}
             placeholder="+xx xx xxx xx xx"
             required
-            onInvalid={(e) => e.target.setCustomValidity("Please enter your phone number")}
+            onInvalid={(e) =>
+              e.target.setCustomValidity("Please enter your phone number")
+            }
             onInput={(e) => e.target.setCustomValidity("")}
           />
         </div>
 
         <div className="mb-3">
-          <label htmlFor="age" className="form-label">Age</label>
+          <label htmlFor="age" className="form-label">
+            Age
+          </label>
           <input
             id="age"
             name="age"
@@ -86,13 +100,17 @@ export default function RegisterForm() {
             onChange={handleChange}
             placeholder="Age"
             required
-            onInvalid={(e) => e.target.setCustomValidity("Please enter your age")}
+            onInvalid={(e) =>
+              e.target.setCustomValidity("Please enter your age")
+            }
             onInput={(e) => e.target.setCustomValidity("")}
           />
         </div>
 
         <div className="mb-3">
-          <label htmlFor="course" className="form-label">Course Name</label>
+          <label htmlFor="course" className="form-label">
+            Course Name
+          </label>
           <input
             id="course"
             name="course"
@@ -102,13 +120,17 @@ export default function RegisterForm() {
             onChange={handleChange}
             placeholder="Course Name"
             required
-            onInvalid={(e) => e.target.setCustomValidity("Please enter your course")}
+            onInvalid={(e) =>
+              e.target.setCustomValidity("Please enter your course")
+            }
             onInput={(e) => e.target.setCustomValidity("")}
           />
         </div>
 
         <div className="mb-3">
-          <label htmlFor="startingDate" className="form-label">Start Date</label>
+          <label htmlFor="startingDate" className="form-label">
+            Start Date
+          </label>
           <input
             id="startingDate"
             name="startingDate"
@@ -117,13 +139,19 @@ export default function RegisterForm() {
             value={formData.startingDate}
             onChange={handleChange}
             required
-            onInvalid={(e) => e.target.setCustomValidity("Please enter the course starting date")}
+            onInvalid={(e) =>
+              e.target.setCustomValidity(
+                "Please enter the course starting date"
+              )
+            }
             onInput={(e) => e.target.setCustomValidity("")}
           />
         </div>
 
         <div className="mb-3">
-          <label htmlFor="comments" className="form-label">Comments</label>
+          <label htmlFor="comments" className="form-label">
+            Comments
+          </label>
           <textarea
             id="comments"
             name="comments"

@@ -5,6 +5,8 @@ import Home from "./Pages/Home";
 import Courses from "./Pages/Courses"; 
 import News from "./Pages/News";       
 import Register from "./Pages/Register"; 
+import CourseDetails from "./Pages/CourseDetails";
+
 import "./App.css";
 
 function App() {
@@ -18,6 +20,7 @@ function App() {
         <Route path="/News" element={<News />} />
         <Route path="/Register" element={<Register />} />
         <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+        <Route path="/courses/:code" element={<CourseDetails />} />
       </Routes>
     </>
   );
